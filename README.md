@@ -1,67 +1,47 @@
-# RAG AI Assistant - Video Processing Pipeline
+# RAG AI Assistant
 
-This project provides a pipeline to download YouTube videos, extract audio, and transcribe/chunk the content for use in a Retrieval-Augmented Generation (RAG) AI assistant.
+A full-stack AI assistant that lets you chat with your videos using RAG (Retrieval-Augmented Generation).
 
-## Workflow
+## 🚀 Setup Instructions
 
-The project consists of several scripts that run in a sequence:
+### 1. Backend (Python)
+The backend handles video downloading, transcription, and the RAG logic.
 
-1.  **Download Videos (`downloading videos using python.py`)**:
-    -   Downloads videos from a specified YouTube playlist using `yt-dlp`.
-    -   Saves videos to a `downloads` folder (though `process_videos.py` expects them in a `videos` folder currently - *Note: You may need to move downloaded files or update the script paths*).
+1.  **Install Dependencies**:
+    ```bash
+    pip install -r backend/requirements.txt
+    ```
+    *Note: If you don't have `ffmpeg` installed on your system, you need it for audio processing. Download it from [ffmpeg.org](https://ffmpeg.org).*
 
-2.  **Extract Audio (`process_videos.py`)**:
-    -   Iterates through the `videos/` directory.
-    -   Uses `ffmpeg` to extract the audio track from each video.
-    -   Saves `.mp3` files to the `audios/` directory with standardized naming.
+2.  **Run Server**:
+    ```bash
+    cd backend
+    python main.py
+    ```
+    The server runs on `http://localhost:8000`.
 
-3.  **Transcribe & Chunk (`create_chunks.py`)**:
-    -   Uses OpenAI's `whisper` model (specifically `large-v2`) to transcribe the audio files in `audios/`.
-    -   Splits the transcription into segments/chunks.
-    -   Saves the chunks along with metadata (start time, end time, text) to JSON files in the `jsons/` directory.
+### 2. Frontend (Next.js)
+The frontend provides a modern UI for uploading and chatting.
 
-### Utility Scripts
+**⚠️ Prerequisite**: You must install [Node.js](https://nodejs.org) (LTS version).
 
--   **`mp3-text.py`**: A simpler script to transcribe a single file (`audios/sample.mp3`) using the `small` model. Useful for quick testing.
--   **`10sec.py`**: Extracts a 10-second clip from a specific audio file. Useful for testing on smaller files.
+1.  **Install Dependencies**:
+    ```bash
+    cd frontend
+    npm install
+    ```
 
-## Prerequisites
+2.  **Run Development Server**:
+    ```bash
+    npm run dev
+    ```
+    Open `http://localhost:3000` to use the app.
 
-### 1. Python Libraries
+## Features
+- **Ingest**: Paste a YouTube URL to download and transcribe it.
+- **RAG**: The system chunks the transcript and stores embeddings locally using ChromaDB.
+- **Chat**: Ask questions about the video content.
 
-Install the required Python packages:
-
-```bash
-pip install yt-dlp openai-whisper
-```
-
-*Note: You may also need `setuptools-rust` if you encounter issues installing Whisper.*
-
-### 2. FFmpeg
-
-This project requires **FFmpeg** to be installed and added to your system's PATH.
--   **Windows**: Download from [ffmpeg.org](https://ffmpeg.org/download.html), extract, and add the `bin` folder to your System Environment Variables.
--   **Mac**: `brew install ffmpeg`
--   **Linux**: `sudo apt install ffmpeg`
-
-## Directory Structure
-
-Ensure your project directory looks like this for the scripts to work correctly:
-
-```
-project_root/
-├── audios/            # Created automatically or manually for MP3s
-├── jsons/             # Output folder for transcription JSONs
-├── videos/            # Source folder for video files
-├── downloads/         # Default download location for yt-dlp script
-├── create_chunks.py
-├── process_videos.py
-└── ...
-```
-
-## Usage
-
-1.  Run `downloading videos using python.py` to get content.
-2.  Ensure videos are in the `videos` folder.
-3.  Run `process_videos.py` to extract audio.
-4.  Run `create_chunks.py` to generate the JSON dataset for your RAG.
+## Architecture
+- **Backend**: FastAPI, Whisper (Transcription), ChromaDB (Vector Store), SentenceTransformers (Embeddings).
+- **Frontend**: Next.js 14, TailwindCSS, Lucide Icons.

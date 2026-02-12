@@ -1,0 +1,17 @@
+1.git add . -> file changes wo saare add hojaenge waiting list me commit hone se phle 
+2.git commit -m "Chunking optimization"
+3.git push -u origin {branch} ie main , Chunking 
+
+4. Always create a branch before adding a feature (Matlab koi naya kaam kro to main branch me na kro taki chlta hua code chude na ... )
+How to create branch
+git branch {branchname} iechunking ,...
+How to check in which branch u are 
+git branch 
+- main - Chunking
+How to switch from one branch to another 
+git checkout main (Main branch me hm log switch kr jaenge jis bhi branch me phle honge usse )
+
+Jaise tmhari chunking  branch me jo code likha tha tumne wo sb bdiya chlra to tm usko chunking branch me push kroge to kya hoga 
+jab tum google se github open kroge to likh compare and create pull request 
+-usme click krna to pull request create ho jaegi
+-ab kya kro us pull request ko main me merge krdo whi option aaega

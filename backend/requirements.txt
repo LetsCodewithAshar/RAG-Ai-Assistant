@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+python-multipart
+chromadb
+sentence-transformers
+youtube-transcript-api
+yt-dlp
+openai-whisper
+torch
+openai
+pydantic
