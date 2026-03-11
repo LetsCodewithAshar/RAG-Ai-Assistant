@@ -50,8 +50,3 @@ python process_incoming.py
 
 Then ask a question in the terminal.
 
-------------------------------------------------------------------------
-
-## Author
-
-Mohammad Arshad
