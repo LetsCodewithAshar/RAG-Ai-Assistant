@@ -1,0 +1,8 @@
+pandas
+numpy
+joblib
+scikit-learn
+requests
+openai-whisper
+yt-dlp
+torch

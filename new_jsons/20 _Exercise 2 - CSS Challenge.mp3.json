@@ -1,0 +1,145 @@
+{
+    "chunks": [
+        {
+            "number": "20 ",
+            "title": "Exercise 2 - CSS Challenge",
+            "start": 0.0,
+            "end": 12.6,
+            "text": " I gave you exercise 1, many of you solved it.  I also gave you a shoutout.  Now it's time for exercise 2.  And in this, we will do a challenge of CSS.  Irrespective of how many people are going to solve it,"
+        },
+        {
+            "number": "20 ",
+            "title": "Exercise 2 - CSS Challenge",
+            "start": 12.6,
+            "end": 28.6,
+            "text": " you guys write Challenge Accepted in the comment section below.  Maintain high energy like this.  And listen to the question carefully and comment your answers.  Whoever writes Challenge Accepted first, I will give them a heart.  And whoever solves the question, will get a shoutout in the coming videos."
+        },
+        {
+            "number": "20 ",
+            "title": "Exercise 2 - CSS Challenge",
+            "start": 28.6,
+            "end": 45.6,
+            "text": " I am very excited. Let's go to the computer screen.  Let's roll the intro.  Intro  So guys, I have come inside the computer screen.  And now I am going to give you exercise."
+        },
+        {
+            "number": "20 ",
+            "title": "Exercise 2 - CSS Challenge",
+            "start": 45.6,
+            "end": 59.6,
+            "text": " So here I will do the first thing.  I will make a folder named Video 20.  So I will make a folder named Video 20.  And here I will simply open it by pressing Shift-Right-Click.  Now listen to me carefully."
+        },
+        {
+            "number": "20 ",
+            "title": "Exercise 2 - CSS Challenge",
+            "start": 59.6,
+            "end": 73.6,
+            "text": " I am giving you an exercise of CSS.  In which you have to do is,  If you are going to get a paragraph,  Then in any div,  The first paragraph, you have to make the background yellow."
+        },
+        {
+            "number": "20 ",
+            "title": "Exercise 2 - CSS Challenge",
+            "start": 73.6,
+            "end": 83.6,
+            "text": " And the color should be red.  And you have to make 5 such divs.  And you have to make a CSS class.  In which you have to give this styling.  So I will frame this question."
+        },
+        {
+            "number": "20 ",
+            "title": "Exercise 2 - CSS Challenge",
+            "start": 83.6,
+            "end": 95.6,
+            "text": " So here I have written the question.  CSS code to style a paragraph inside a div.  Such that, the first paragraph must have background color yellow.  And text color red.  So here you have seen that,"
+        },
+        {
+            "number": "20 ",
+            "title": "Exercise 2 - CSS Challenge",
+            "start": 95.6,
+            "end": 113.6,
+            "text": " The first paragraph should have a yellow background color.  And text color red.  And the other paragraphs must have background color blue.  And text color white.  So I will comment this out."
+        },
+        {
+            "number": "20 ",
+            "title": "Exercise 2 - CSS Challenge",
+            "start": 113.6,
+            "end": 124.6,
+            "text": " So that it does not interfere with our code.  And here I am going to write HTML code.  So this is for you.  lorem 23  And along with that here,"
+        },
+        {
+            "number": "20 ",
+            "title": "Exercise 2 - CSS Challenge",
+            "start": 124.6,
+            "end": 135.6,
+            "text": " I am another para.  Okay, and I have written like this.  And I will make two divs like this.  And I will write p here.  I am also another para."
+        },
+        {
+            "number": "20 ",
+            "title": "Exercise 2 - CSS Challenge",
+            "start": 135.6,
+            "end": 147.6,
+            "text": " And here I will make two divs like this.  Okay, and here you can see.  That we have to write CSS rules like this.  Such that,  The first paragraph of you,"
+        },
+        {
+            "number": "20 ",
+            "title": "Exercise 2 - CSS Challenge",
+            "start": 147.6,
+            "end": 158.6,
+            "text": " This paragraph inside the div.  Its styling should be different.  And the styling of these paragraphs should be different.  You do not have to put class in the paragraph.  Now do not say that I will put class in this paragraph."
+        },
+        {
+            "number": "20 ",
+            "title": "Exercise 2 - CSS Challenge",
+            "start": 158.6,
+            "end": 170.6,
+            "text": " No, you do not have to do anything in HTML.  Do not touch the HTML.  I will write you.  Do not change this HTML.  This HTML should not be changed."
+        },
+        {
+            "number": "20 ",
+            "title": "Exercise 2 - CSS Challenge",
+            "start": 170.6,
+            "end": 180.6,
+            "text": " This is our condition.  I hope you understood the question well.  So if I preview this HTML,  You can see that it will look like this.  It is a very simple HTML."
+        },
+        {
+            "number": "20 ",
+            "title": "Exercise 2 - CSS Challenge",
+            "start": 180.6,
+            "end": 190.6,
+            "text": " And this question is very basic.  What happened in the last video?  Very few people answered.  One thing I would like to tell you is that you are in the comment section below.  First of all, write the challenge accepted."
+        },
+        {
+            "number": "20 ",
+            "title": "Exercise 2 - CSS Challenge",
+            "start": 190.6,
+            "end": 202.6,
+            "text": " And if anyone is solving this question.  Then you put a hashtag of solution.  What hashtag will you put?  Write the hashtag of solution.  Write it like this so that I can search."
+        },
+        {
+            "number": "20 ",
+            "title": "Exercise 2 - CSS Challenge",
+            "start": 202.6,
+            "end": 212.6,
+            "text": " By putting the hashtag solution.  And if the challenge is accepted, then write it.  This is mandatory for all of you.  If you have not accessed the playlist yet.  Access it."
+        },
+        {
+            "number": "20 ",
+            "title": "Exercise 2 - CSS Challenge",
+            "start": 212.6,
+            "end": 222.6,
+            "text": " I have also given the source code here.  You can go to this website for notes.  And by clicking on notes here, you can access the notes.  I have put all the notes here.  You can download the PDFs."
+        },
+        {
+            "number": "20 ",
+            "title": "Exercise 2 - CSS Challenge",
+            "start": 222.6,
+            "end": 232.6,
+            "text": " HTML and CSS.  You can also download the PDFs.  I need the solution of everyone.  I hope you are enjoying this course.  That's all for now."
+        },
+        {
+            "number": "20 ",
+            "title": "Exercise 2 - CSS Challenge",
+            "start": 232.6,
+            "end": 258.6,
+            "text": " Thank you so much for watching this video.  And I will see you next time.  Music."
+        }
+    ],
+    "text": " I gave you exercise 1, many of you solved it. I also gave you a shoutout. Now it's time for exercise 2. And in this, we will do a challenge of CSS. Irrespective of how many people are going to solve it, you guys write Challenge Accepted in the comment section below. Maintain high energy like this. And listen to the question carefully and comment your answers. Whoever writes Challenge Accepted first, I will give them a heart. And whoever solves the question, will get a shoutout in the coming videos. I am very excited. Let's go to the computer screen. Let's roll the intro. Intro So guys, I have come inside the computer screen. And now I am going to give you exercise. So here I will do the first thing. I will make a folder named Video 20. So I will make a folder named Video 20. And here I will simply open it by pressing Shift-Right-Click. Now listen to me carefully. I am giving you an exercise of CSS. In which you have to do is, If you are going to get a paragraph, Then in any div, The first paragraph, you have to make the background yellow. And the color should be red. And you have to make 5 such divs. And you have to make a CSS class. In which you have to give this styling. So I will frame this question. So here I have written the question. CSS code to style a paragraph inside a div. Such that, the first paragraph must have background color yellow. And text color red. So here you have seen that, The first paragraph should have a yellow background color. And text color red. And the other paragraphs must have background color blue. And text color white. So I will comment this out. So that it does not interfere with our code. And here I am going to write HTML code. So this is for you. lorem 23 And along with that here, I am another para. Okay, and I have written like this. And I will make two divs like this. And I will write p here. I am also another para. And here I will make two divs like this. Okay, and here you can see. That we have to write CSS rules like this. Such that, The first paragraph of you, This paragraph inside the div. Its styling should be different. And the styling of these paragraphs should be different. You do not have to put class in the paragraph. Now do not say that I will put class in this paragraph. No, you do not have to do anything in HTML. Do not touch the HTML. I will write you. Do not change this HTML. This HTML should not be changed. This is our condition. I hope you understood the question well. So if I preview this HTML, You can see that it will look like this. It is a very simple HTML. And this question is very basic. What happened in the last video? Very few people answered. One thing I would like to tell you is that you are in the comment section below. First of all, write the challenge accepted. And if anyone is solving this question. Then you put a hashtag of solution. What hashtag will you put? Write the hashtag of solution. Write it like this so that I can search. By putting the hashtag solution. And if the challenge is accepted, then write it. This is mandatory for all of you. If you have not accessed the playlist yet. Access it. I have also given the source code here. You can go to this website for notes. And by clicking on notes here, you can access the notes. I have put all the notes here. You can download the PDFs. HTML and CSS. You can also download the PDFs. I need the solution of everyone. I hope you are enjoying this course. That's all for now. Thank you so much for watching this video. And I will see you next time. Music."
+}

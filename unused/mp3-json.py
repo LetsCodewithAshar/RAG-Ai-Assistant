@@ -5,7 +5,7 @@ import os
 model=whisper.load_model("large-v2")
 audios=os.listdir("audios")
 
-for audio in audios[:5]:
+for audio in audios:
     if('_' in audio):
         number=audio.split("_")[0]
         title=audio.split("_")[1][:-4]
