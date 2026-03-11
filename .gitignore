@@ -24,5 +24,6 @@ Thumbs.db
 audios/
 videos/
 new_jsons/
-response.txt/
-prompt.txt/
+response.txt
+prompt.txt
+new_embeddings.joblib
