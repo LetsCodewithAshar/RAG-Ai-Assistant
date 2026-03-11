@@ -1,67 +1,57 @@
-# RAG AI Assistant - Video Processing Pipeline
+# Video Course RAG Assistant
 
-This project provides a pipeline to download YouTube videos, extract audio, and transcribe/chunk the content for use in a Retrieval-Augmented Generation (RAG) AI assistant.
+A Retrieval-Augmented Generation (RAG) based AI assistant that allows
+users to ask questions about a collection of video lectures. The system
+searches lecture transcripts, retrieves relevant sections, and generates
+answers pointing to exact timestamps.
 
-## Workflow
+------------------------------------------------------------------------
 
-The project consists of several scripts that run in a sequence:
+## Overview
 
-1.  **Download Videos (`downloading videos using python.py`)**:
-    -   Downloads videos from a specified YouTube playlist using `yt-dlp`.
-    -   Saves videos to a `downloads` folder (though `process_videos.py` expects them in a `videos` folder currently - *Note: You may need to move downloaded files or update the script paths*).
+This project converts video lectures into a searchable knowledge base
+using transcripts and embeddings. Users can ask natural language
+questions and get answers grounded in the lecture content.
 
-2.  **Extract Audio (`process_videos.py`)**:
-    -   Iterates through the `videos/` directory.
-    -   Uses `ffmpeg` to extract the audio track from each video.
-    -   Saves `.mp3` files to the `audios/` directory with standardized naming.
+------------------------------------------------------------------------
 
-3.  **Transcribe & Chunk (`create_chunks.py`)**:
-    -   Uses OpenAI's `whisper` model (specifically `large-v2`) to transcribe the audio files in `audios/`.
-    -   Splits the transcription into segments/chunks.
-    -   Saves the chunks along with metadata (start time, end time, text) to JSON files in the `jsons/` directory.
+## Pipeline
 
-### Utility Scripts
+1.  Video → Audio (`video-mp3.py`)
+2.  Audio → Transcript JSON (`mp3-json.py`)
+3.  Chunk Processing (`merge_chunks.py`)
+4.  Embedding Creation (`embeddings_creation.py`)
+5.  Query + Retrieval + Answer (`process_incoming.py`)
 
--   **`mp3-text.py`**: A simpler script to transcribe a single file (`audios/sample.mp3`) using the `small` model. Useful for quick testing.
--   **`10sec.py`**: Extracts a 10-second clip from a specific audio file. Useful for testing on smaller files.
+------------------------------------------------------------------------
 
-## Prerequisites
+## Technologies
 
-### 1. Python Libraries
+Python\
+pandas\
+numpy\
+scikit-learn\
+joblib\
+requests\
+openai-whisper\
+yt-dlp\
+torch
 
-Install the required Python packages:
+Models: - bge-m3 (embeddings) - mistral (generation)
 
-```bash
-pip install yt-dlp openai-whisper
+------------------------------------------------------------------------
+
+## Run
+
+``` bash
+pip install -r requirements.txt
+python process_incoming.py
 ```
 
-*Note: You may also need `setuptools-rust` if you encounter issues installing Whisper.*
+Then ask a question in the terminal.
 
-### 2. FFmpeg
+------------------------------------------------------------------------
 
-This project requires **FFmpeg** to be installed and added to your system's PATH.
--   **Windows**: Download from [ffmpeg.org](https://ffmpeg.org/download.html), extract, and add the `bin` folder to your System Environment Variables.
--   **Mac**: `brew install ffmpeg`
--   **Linux**: `sudo apt install ffmpeg`
+## Author
 
-## Directory Structure
-
-Ensure your project directory looks like this for the scripts to work correctly:
-
-```
-project_root/
-├── audios/            # Created automatically or manually for MP3s
-├── jsons/             # Output folder for transcription JSONs
-├── videos/            # Source folder for video files
-├── downloads/         # Default download location for yt-dlp script
-├── create_chunks.py
-├── process_videos.py
-└── ...
-```
-
-## Usage
-
-1.  Run `downloading videos using python.py` to get content.
-2.  Ensure videos are in the `videos` folder.
-3.  Run `process_videos.py` to extract audio.
-4.  Run `create_chunks.py` to generate the JSON dataset for your RAG.
+Mohammad Arshad
